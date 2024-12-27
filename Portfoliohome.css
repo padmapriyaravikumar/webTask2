@@ -1,0 +1,255 @@
+*
+{
+    margin:0;
+    padding: 0;
+    font-family:'Poppins,sans-serif';
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color:#fff;
+}
+.header
+{
+    margin-left: 400px;
+    padding:20px;
+    font-size: 30px;
+}
+.header ul
+{
+    list-style-type: none;
+    display: flex;
+    gap:100px;
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+
+}
+a:hover{
+    background-color:deepskyblue;
+    border-radius: 10px;;
+}
+.name
+{
+   
+    font-size:30px;
+    margin-top:90px;
+    margin-left: 100px;
+}
+.name h3 span
+{
+   
+color:deepskyblue;
+
+}
+.homeimg
+{
+    display: flex;
+    gap:300px;
+}
+.imggirl
+{
+    
+    border-radius:50%;
+    height:500px;
+}
+.aboutimg
+{
+    height: 550px;
+    border-radius: 100px;
+}
+.imgtoabout
+{
+    display:flex;
+    
+    gap:80px;
+}
+.tabtitle
+{
+    display:flex;
+    gap:200px;
+   
+    
+}
+.link1
+{
+    font-size: 20px;
+    font-weight: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.link1::after
+{
+    content:''; 
+    width:0;
+     height:3px;
+    background:rgba(0,191,255,-0.2);
+    position:absolute;
+   
+    bottom:-8px;
+    transition:0.5s;
+}
+.link1:hover{
+    background-color: deepskyblue;
+}
+.link1.active-link::after
+{
+    
+}
+.tabcontent ul li
+{
+    list-style-type: none;  
+    margin:30px 100px;
+   
+}
+.tabcontent ul li span{
+    color:deepskyblue;
+    font-size: 14px;
+}
+.tabcontent
+{
+    display:none;
+}
+.active-tab
+{
+    display: block;
+   
+}
+/* .....------Services------.... */
+#Services
+{
+padding: 30px,0;
+}
+.servicelist
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.servicelist div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius:10px;
+    transition: background 0.5s,trnasform 0.5s;
+}
+.servicelist div h2{
+    font-size:30px;
+    font-weight:500;
+    margin-bottom: 15px;;
+}
+.servicelist div a
+{
+    color:white;
+    font-size:20px;
+    margin-top: 20px;
+    display:inline-block;
+}
+.servicelist div:hover{
+    background: deepskyblue;
+    transform: translateY(-10px);
+}
+.head h1{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+/* portfolio */
+#portfolio
+{
+    padding: 50px 0;
+}
+.worklist
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.work
+{
+    border-radius: 10px;
+    position:relative;
+    overflow:hidden;
+}
+.work img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition:transform 0.5s;
+}
+.layer
+{
+    width:100%;
+    height:1;
+    background: linear-gradient(rgba(0,0,0,0.6),deepskyblue);
+    border-radius:20px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px;
+    text-align:center;
+   
+}
+.layer h2{
+    font-weight: 500;
+    margin-bottom:20px;
+}
+.work :hover {
+    transform: scale(1.1);
+    height:100%;
+} 
+.btn 
+{
+    display:block;
+    margin:50px auto;
+    width:fit-content;
+    border:1px solid deepskyblue;
+    padding:14px 50px;
+    border-radius: 6px;
+}
+
+.row
+{
+    display:flex;
+    gap:200px;
+    margin-left: 40px;
+}
+.contact-left p
+{
+    margin-top: 30px;
+   
+}
+.contact-right p
+{
+    margin-top: 30px;
+   
+}
+.contact-right form{
+    width:100%;
+
+} 
+form input,form textarea{
+    width:500px;
+    border:0;
+    outline:none;
+    background: #262626;
+    padding:5px;
+    margin:15px 0;
+    color:#fff;
+    font-size: 14px;
+    border-radius: 6px;
+}
